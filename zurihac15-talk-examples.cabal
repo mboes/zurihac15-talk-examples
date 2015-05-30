@@ -1,0 +1,24 @@
+name:                zurihac15-talk-examples
+version:             0.1.0.0
+synopsis:            ZuriHac'15 talk on distributed Haskell
+description:         See README.
+homepage:            https://github.com/mboes/zurihac15-talk-examples
+license:             BSD3
+license-file:        LICENSE
+author:              Mathieu Boespflug
+maintainer:          m@tweag.io
+category:            Control
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+source-repository head
+  type:     git
+  location: https://github.com/mboes/zurihac15-talk-examples
+
+executable collatz
+  main-is:             collatz.hs
+  build-depends:       base >=4.8 && <5
+                     , distributed-process >= 0.5.3
+                     , distributed-process-simplelocalnet >= 0.2
+  default-language:    Haskell2010
