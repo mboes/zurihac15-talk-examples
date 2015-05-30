@@ -23,7 +23,7 @@ remotableDecl [ [d|
         nextNode = slaves !! (x' `mod` length slaves)
     say $ show x ++ " goes to " ++ show x'
     unless (x' == 1) $
-      void $ spawn (slaves !! ) $ $(mkClosure 'distributedCollatz) (slaves, collatz x)
+      void $ spawn nextNode $ $(mkClosure 'distributedCollatz) (slaves, collatz x)
   |]]
 
 remoteTable = __remoteTableDecl initRemoteTable
