@@ -18,7 +18,7 @@ source-repository head
 
 executable collatz
   main-is:             collatz.hs
-  build-depends:       base >=4.8 && <5
+  build-depends:       base >=4.7 && <5
                      , distributed-process >= 0.5.3
                      , distributed-process-simplelocalnet >= 0.2
   default-language:    Haskell2010
