@@ -23,4 +23,6 @@ stack exec -- collatz slave localhost 7002 &
 stack exec -- collatz master localhost 7000
 ```
 
-or use the provided `launch.sh` script.
+or use the provided `launch.sh` script. The master will wait at the
+terminal until you press the RETURN key, at which point all slaves
+will be terminated and the master will exit.
